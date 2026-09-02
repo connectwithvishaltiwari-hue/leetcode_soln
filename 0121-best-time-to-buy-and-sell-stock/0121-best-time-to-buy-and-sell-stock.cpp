@@ -5,7 +5,7 @@ public:
         int j = 1;
         int buy = 0;
         int profit = 0;
-        while(j<=(arr.size() - 1)){
+        while(j<(arr.size())){
             if (arr[i] > arr[j]){
                 i = j;
                 j++;
