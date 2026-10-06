@@ -1,13 +1,14 @@
 class Solution {
 public:
-    long long missingNumber(vector<int>& arr) {
-        // code here
-        long long sum = 0;
-        for (int i = 0; i < arr.size(); i++){
-            sum+=arr[i];
+    int missingNumber(vector<int>& nums) {
+        int sum = 0;
+        for(int i = 0; i <= nums.size(); i++){
+            sum += i;
         }
-        long long n = arr.size();
-        long long tot = (n*(n+1))/2;
-        return tot - sum;
+        int sum1 = 0;
+        for(int i = 0; i < nums.size(); i++){
+            sum1 += nums[i];
+        }int miss = sum - sum1;
+        return miss;
     }
 };
