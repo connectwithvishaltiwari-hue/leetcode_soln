@@ -16,7 +16,7 @@ public:
             }
         }
 
-        // long long a = odd * even;
-        return (odd * even) % 1000000007;;
+        long long a = odd * even;
+        return a % 1000000007;;
     }
 };
